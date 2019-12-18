@@ -1,0 +1,14 @@
+bind generic + !git commit --amend --no-edit
+# bind generic B @sh -c "xdg-open 'https://'$(git remote -v | grep -Eo 'github.com[:/][^.]+' | head -1 | tr : /)'/commit/%(commit)'"
+bind main <Ctrl-f> scroll-page-down
+bind main <Ctrl-b> scroll-page-up
+bind main p !git pull
+bind main P !git push origin
+bind main B !git rebase -i %(commit)
+# bind stage 1 stage-update-line
+# bind refs n !@git branch "%(prompt Enter branch name: )"
+bind status P !git push origin
+bind status D !@?rm %(file)
+bind status S !?git stash save %(prompt)
+bind stash D !?git stash drop %(stash)
+bind stash A !?git stash apply %(stash)

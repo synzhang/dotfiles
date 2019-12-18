@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/synzhang/Workspace/portfolio/mindflow/mindflow-web'
+let g:netrw_dirhist_2='/Users/synzhang/Workspace/portfolio/mindflow/mindflow-web/src/routes'
+let g:netrw_dirhist_3='/Users/synzhang/Workspace/portfolio/mindflow/mindflow-web'
+let g:netrw_dirhist_4='/Users/synzhang/Workspace/portfolio/mindflow/mindflow-web/src/routes'
+let g:netrw_dirhist_5='/Users/synzhang/Workspace/portfolio/mindflow/mindflow-web'
+let g:netrw_dirhist_6='/Users/synzhang/Google Drive/Backup/dotfiles/vim/spacevim/SpaceVim.d'

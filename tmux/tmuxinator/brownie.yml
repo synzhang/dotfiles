@@ -1,0 +1,11 @@
+name: brownie
+root: ~/Workspace/portfolio/brownie
+
+windows:
+  - main:
+      layout: even-horizontal
+      panes:
+        - # empty
+        - tig
+  - editor: vim .
+  - server: rails s -p 4000 -b 0.0.0.0

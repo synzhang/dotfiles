@@ -1,0 +1,24 @@
+# ~/.tmuxinator/zhiren.yml
+
+name: tower
+root: ~/Workspace/portfolio/mycolorway/tower_docker
+
+windows:
+  - main:
+      layout: even-horizontal
+      panes:
+        - #empty
+        - tig
+  - editor: vim .
+  - server:
+      layout: even-horizontal
+      panes:
+        - docker:
+          - docker-sync-stack start
+        - docker_console:
+          - #empty
+  - staging:
+      layout: even-horizontal
+      panes:
+        - #empty
+        - #empty

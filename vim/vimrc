@@ -1,0 +1,223 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+" Plugin 'mhinz/vim-startify'
+" map <C-s> :Startify<CR>
+" let g:startify_enable_special         = 0
+" let g:startify_files_number           = 8
+" let g:startify_relative_path          = 1
+" let g:startify_change_to_dir          = 1
+" let g:startify_session_autoload       = 1
+" let g:startify_session_persistence    = 1
+" let g:startify_session_delete_buffers = 1
+" let g:startify_list_order = [
+"   \ ['   Sessions:'],
+"   \ 'sessions',
+"   \ ['   Bookmarks:'],
+"   \ 'bookmarks',
+"   \ ]
+" let g:startify_skiplist = [
+"             \ 'COMMIT_EDITMSG',
+"             \ fnamemodify($VIMRUNTIME, ':p') .'/doc',
+"             \ 'bundle/.*/doc',
+"             \ '\.vimgolf',
+"             \ ]
+" let g:startify_bookmarks = [
+"             \ '~/Workspace/portfolio/knewone/making',
+"             \ '~/Workspace/snippet',
+"             \ '~/Workspace',
+"             \ '~/.vimrc',
+"             \ ]
+" let g:startify_custom_header =
+"       \ map(split(system('tips | cowsay -f apt'), '\n'), '"   ". v:val') + ['']
+" hi StartifyBracket ctermfg=240
+" hi StartifyFile    ctermfg=147
+" hi StartifyFooter  ctermfg=240
+" hi StartifyHeader  ctermfg=114
+" hi StartifyNumber  ctermfg=215
+" hi StartifyPath    ctermfg=245
+" hi StartifySlash   ctermfg=240
+" hi StartifySpecial ctermfg=240
+Plugin 'scrooloose/nerdtree'
+let NERDTreeMinimalUI=1
+let NERDTreeAutoDeleteBuffer=1
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+map <C-t> :NERDTreeToggle<CR>
+" Plugin 'jistr/vim-nerdtree-tabs'
+" let g:nerdtree_tabs_open_on_console_startup=1
+" map <Leader>t <plug>NERDTreeTabsToggle<CR>
+Plugin 'EasyMotion'
+let g:EasyMotion_leader_key = '<Leader>'
+Plugin 'ctrlp.vim'
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\.git$\|\.hg$\|\.svn$\|bower_components$\|dist$\|node_modules$',
+    \ 'file': '\v\.(exe|so|dll|jpg|png|gif|ico|eot|ttf|woff|map|min.js|min.css)$',
+    \}
+Plugin 'tacahiroy/ctrlp-funky'
+Plugin 'danro/rename.vim'
+Plugin 'nelstrom/vim-qargs'
+Plugin 'pbrisbin/vim-mkdir'
+" Plugin 'majutsushi/tagbar'
+" nmap <F8> :TagbarToggle<CR>
+" Track the engine.
+" Plugin 'SirVer/ultisnips'
+" Snippets are separated from the engine. Add this if you want them:
+Plugin 'honza/vim-snippets'
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+" let g:UltiSnipsExpandTrigger="<tab>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" If you want :UltiSnipsEdit to split your window.
+" let g:UltiSnipsEditSplit="vertical"
+" Plugin 'Syntastic'
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_ruby_checkers = ['rubocop', 'mri']
+Plugin 'junegunn/goyo.vim'
+nnoremap <Leader>G :Goyo<CR>
+Plugin 'posva/vim-vue'
+" Plugin 'mattn/emmet-vim'
+" Plugin 'Valloric/YouCompleteMe'
+" let g:ycm_register_as_syntastic_checker=0
+Plugin 'commentary.vim'
+Plugin 'rking/ag.vim'
+Plugin 'wellle/visual-split.vim'
+Plugin 'bling/vim-airline'
+set laststatus=2
+let g:airline_detect_whitespace=0
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#show_tabs=1
+let g:airline#extensions#tabline#show_splits=0
+let g:airline#extensions#tabline#show_tab_type=0
+let g:airline#extensions#tabline#show_tab_nr=0
+let g:airline#extensions#tabline#show_buffers=0
+let g:airline_theme='gotham'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'terryma/vim-expand-region'
+map K <Plug>(expand_region_expand)
+" map J <Plug>(expand_region_shrink)
+" Plugin 'mbbill/undotree'
+" nnoremap <Leader>u :UndotreeToggle<cr>
+" if !exists('g:undotree_WindowLayout')
+"   let g:undotree_WindowLayout=3
+" endif
+" if !exists('g:undotree_SplitWidth')
+"   let g:undotree_SplitWidth=40
+" endif
+" if !exists('g:undotree_SetFocusWhenToggle')
+"   let g:undotree_SetFocusWhenToggle=1
+" endif
+" if has("persistent_undo")
+"   set undodir=~/.undodir/
+"   set undofile
+" endif
+Plugin 'wellle/targets.vim'
+" Plugin 'Gundo.vim'
+" Plugin 'YankRing.vim'
+" Plugin 'Indent-Guides'
+Plugin 'djoshea/vim-autoread'
+Plugin 'hotoo/pangu.vim'
+" Plugin 'tpope/vim-endwise'
+Plugin 'delimitMate.vim'
+" Plugin 'airblade/vim-gitgutter'
+Plugin 'chriskempson/base16-vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'whatyouhide/vim-gotham'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'heavenshell/vim-jsdoc'
+" Plugin 'bigfish/vim-js-context-coloring'
+" Plugin 'ngmy/vim-rubocop'
+" Plugin 'sunaku/vim-ruby-minitest'
+" set completefunc=syntaxcomplete#Complete
+" Plugin 'itspriddle/vim-marked'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'tmux-plugins/vim-tmux-focus-events'
+Plugin 'trevordmiller/nova-vim'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+syntax enable
+au BufRead,BufNewFile *.es6 set filetype=javascript
+au BufRead,BufNewFile *.slimbars set filetype=slim
+au BufNewFile,BufRead *.json.jbuilder set filetype=ruby
+let mapleader=" "
+let g:netrw_winsize=20
+let &termencoding=&encoding
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/tmp/*,*/sass-cache/*,*/DS_Store/*
+set autoread
+set lazyredraw
+" set ttyfast
+set noswapfile
+set nobackup
+set nowb
+set fileencodings=utf-8,gbk
+set ruler
+set hlsearch
+set incsearch
+set guioptions-=m
+set guioptions-=T
+set guioptions-=r
+set guioptions-=L
+set cursorcolumn
+set expandtab
+set splitbelow
+set splitright
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set guifont=Sauce\ Code\ Powerline:h14
+let g:airline_powerline_fonts = 1
+set background=dark
+colorscheme gotham
+autocmd BufWritePre *.py :%s/\s\+$//e
+" if has("gui_running")
+"   set fuoptions=maxvert,maxhorz
+"   au GUIEnter * set fullscreen
+" endif
+com! FormatJSON %!python -m json.tool
+
+" Jump to first character or column
+noremap <silent> H :call FirstCharOrFirstCol()<cr>
+
+function! FirstCharOrFirstCol()
+  let current_col = virtcol('.')
+  normal ^
+  let first_char = virtcol('.')
+  if current_col <= first_char
+    normal 0
+  endif
+endfunction
+
+" Jump to end of line
+noremap L $
+
+" Fold code in Vim
+" set foldmethod=indent
+" nnoremap <leader><Space> za
