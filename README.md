@@ -53,6 +53,8 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 ## Development
 
 - [Visual Studio Code](https://code.visualstudio.com/): Code editing. Redefined. Free. Built on open source. Runs everywhere.
+- [Neovim](https://github.com/neovim/neovim): Vim-fork focused on extensibility and usability.
+  - [SpaceVim](https://github.com/SpaceVim/SpaceVim): A community-driven modular vim/neovim distribution - The ultimate vimrc.
 - [Git](https://git-scm.com/): Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
   - [Tig](http://jonas.github.io/tig/): Text-mode interface for Git.
   - [GitUI](https://github.com/extrawurst/gitui): Blazing fast terminal-ui for git written in Rust.
