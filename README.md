@@ -6,6 +6,9 @@
 
 ### Shell
 
+- [Zsh](https://www.zsh.org/): Zsh is a shell designed for interactive use.
+  - [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh): Oh My Zsh is an open source, community-driven framework for managing your zsh configuration.
+  - [Powerlevel10k](https://github.com/romkatv/powerlevel10k): Powerlevel10k is a theme for Zsh. It emphasizes speed, flexibility and out-of-the-box experience.
 - [Bash-it](https://github.com/Bash-it/bash-it): A community Bash framework.
 - [fzf](https://github.com/junegunn/fzf): A command-line fuzzy finder.
 - [z](https://github.com/rupa/z): Jump around.
