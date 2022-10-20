@@ -9,13 +9,15 @@
 - [Zsh](https://www.zsh.org/): Zsh is a shell designed for interactive use.
   - [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh): Oh My Zsh is an open source, community-driven framework for managing your zsh configuration.
   - [Powerlevel10k](https://github.com/romkatv/powerlevel10k): Powerlevel10k is a theme for Zsh. It emphasizes speed, flexibility and out-of-the-box experience.
-- [Bash-it](https://github.com/Bash-it/bash-it): A community Bash framework.
-- [fzf](https://github.com/junegunn/fzf): A command-line fuzzy finder.
-- [z](https://github.com/rupa/z): Jump around.
-- [tldr pages](https://tldr.sh/): Simplified and community-driven man pages.
+  - [zsh-z](https://github.com/agkozak/zsh-z): Jump quickly to directories that you have visited "frecently." A native Zsh port of z.sh with added features.
 - [exa](https://the.exa.website/): A modern replacement for ls.
 - [bat](https://github.com/sharkdp/bat): A cat(1) clone with wings.
 - [tree](https://formulae.brew.sh/formula/tree): Display directories as trees.
+- [fzf](https://github.com/junegunn/fzf): A command-line fuzzy finder.
+- [fd](https://github.com/sharkdp/fd): A simple, fast and user-friendly alternative to 'find'.
+- [ripgrep](https://github.com/BurntSushi/ripgrep): ripgrep recursively searches directories for a regex pattern while respecting your gitignore.
+- [tldr](https://tldr.sh/): Simplified and community-driven man pages.
+- [tokei](https://github.com/XAMPPRocky/tokei): Count your code, quickly.
 
 ### SSH
 
@@ -53,9 +55,21 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 ## Development
 
 - [Visual Studio Code](https://code.visualstudio.com/): Code editing. Redefined. Free. Built on open source. Runs everywhere.
+  Enable key-repeating:
+  ```shell
+  $ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false              # For VS Code
+  $ defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false      # For VS Code Insider
+  $ defaults write com.visualstudio.code.oss ApplePressAndHoldEnabled -bool false         # For VS Codium
+  $ defaults write com.microsoft.VSCodeExploration ApplePressAndHoldEnabled -bool false   # For VS Codium Exploration users
+  # And then re-login
+  ```
 - [Neovim](https://github.com/neovim/neovim): Vim-fork focused on extensibility and usability.
   - [SpaceVim](https://github.com/SpaceVim/SpaceVim): A community-driven modular vim/neovim distribution - The ultimate vimrc.
 - [Git](https://git-scm.com/): Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+  ```shell
+  $ git config --global user.email "you@example.com"
+  $ git config --global user.name "Your Name"
+  ```
   - [Tig](http://jonas.github.io/tig/): Text-mode interface for Git.
   - [GitUI](https://github.com/extrawurst/gitui): Blazing fast terminal-ui for git written in Rust.
 - [Node.js](https://nodejs.org/en/): Node.js is an open-source, cross-platform JavaScript runtime environment.
@@ -63,6 +77,7 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
   - [npm-check](https://github.com/dylang/npm-check): Check for outdated, incorrect, and unused dependencies.
 - [Docker](https://www.docker.com/products/docker-desktop/): The fastest way to containerize applications.
 - [Postman](https://www.postman.com/): Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.
+- [Sequel Ace](https://apps.apple.com/us/app/sequel-ace/id1518036000): SQL Tool for Experts & Novices.
 - [Nerd Fonts](https://www.nerdfonts.com/): Nerd Fonts patches developer targeted fonts with a high number of glyphs (icons). Specifically to add a high number of extra glyphs from popular ‘iconic fonts’ such as Font Awesome, Devicons, Octicons, and others.
 
 ## App
@@ -87,6 +102,7 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 - [iStat Menus](https://bjango.com/mac/istatmenus/): An advanced Mac system monitor for your menu bar.
 - [CleanMyMac X](https://cleanmymac.com/): The most user-friendly problem fixer for Mac. Delete system junk, unwanted apps and malware, and tune your Mac for maximum speed. For a slow computer, use immediately.
 - [Keyboard Maestro](https://www.keyboardmaestro.com/main/): The Premier Mac Automation Software.
+- [Actions](https://apps.apple.com/us/app/actions/id1586435171): Useful actions for Shortcuts.
 - [Microsoft Remote Desktop](https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466): Use Microsoft Remote Desktop for Mac to connect to Azure Virtual Desktop, Windows 365, admin-provided virtual apps and desktops, or remote PCs.
 - [IINA](https://iina.io/): The modern media player for macOS.
 - [Aliyun Drive](https://www.aliyundrive.com/): A fast, non-intrusive and easy to share online drive made by Alibaba.
@@ -97,6 +113,11 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 - [Karabiner-Elements](https://karabiner-elements.pqrs.org/): A powerful and stable keyboard customizer for macOS.
 - [Sip](https://sipapp.io/): A better Color Picker for your Mac.
 - [Motrix](https://motrix.app): A full-featured download manager.
+- [Scratch](https://apps.apple.com/us/app/scratch/id1446785996): With Scratch, you can program your own interactive stories, games, and animations.
+- [Reeder](https://apps.apple.com/cn/app/reeder-4/id1449412482): A RSS Reader.
+- [Affinity Photo](https://apps.apple.com/us/app/affinity-photo/id824183456): Professional photo editing.
+- [Yoink](https://apps.apple.com/us/app/yoink-improved-drag-and-drop/id457622435): Your Files and Snippet Shelf.
+- [Unsplash](https://apps.apple.com/us/app/unsplash-wallpapers/id1284863847): A breathtaking photo for your desktop wallpaper, every day.
 
 ---
 
@@ -104,7 +125,5 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 
 - [dotfiles](https://dotfiles.github.io/)
 - [My Setup](https://mysetup.co/)
-- [My 2021 New Mac Setup
-](https://www.swyx.io/new-mac-setup-2021)
-- [Mac Setup for Web Development [2022]
-](https://www.robinwieruch.de/mac-setup-web-development/)
+- [My 2021 New Mac Setup](https://www.swyx.io/new-mac-setup-2021)
+- [Mac Setup for Web Development [2022]](https://www.robinwieruch.de/mac-setup-web-development/)
