@@ -69,6 +69,8 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
   ```shell
   $ git config --global user.email "you@example.com"
   $ git config --global user.name "Your Name"
+  $ git config --global core.editor vim
+  $ git config --global pull.rebase true
   ```
   - [Tig](http://jonas.github.io/tig/): Text-mode interface for Git.
   - [GitUI](https://github.com/extrawurst/gitui): Blazing fast terminal-ui for git written in Rust.
@@ -127,3 +129,4 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 - [My Setup](https://mysetup.co/)
 - [My 2021 New Mac Setup](https://www.swyx.io/new-mac-setup-2021)
 - [Mac Setup for Web Development [2022]](https://www.robinwieruch.de/mac-setup-web-development/)
+- [The Ultimate Guide to Your Terminal Makeover](https://towardsdatascience.com/the-ultimate-guide-to-your-terminal-makeover-e11f9b87ac99)
