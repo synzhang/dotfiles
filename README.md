@@ -10,6 +10,9 @@
   - [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh): Oh My Zsh is an open source, community-driven framework for managing your zsh configuration.
   - [Powerlevel10k](https://github.com/romkatv/powerlevel10k): Powerlevel10k is a theme for Zsh. It emphasizes speed, flexibility and out-of-the-box experience.
   - [zsh-z](https://github.com/agkozak/zsh-z): Jump quickly to directories that you have visited "frecently." A native Zsh port of z.sh with added features.
+- [Pandoc](https://github.com/jgm/pandoc): A universal document converter.
+- [ImageMagick](https://github.com/imagemagick/imagemagick): Used to create, edit, compose, or convert bitmap images, and supports a wide range of file formats.
+- [FFmpeg](https://github.com/FFmpeg/FFmpeg): A collection of libraries and tools to process multimedia content such as audio, video, subtitles and related metadata.
 - [exa](https://the.exa.website/): A modern replacement for ls.
 - [bat](https://github.com/sharkdp/bat): A cat(1) clone with wings.
 - [tree](https://formulae.brew.sh/formula/tree): Display directories as trees.
@@ -90,6 +93,10 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 - [Dropbox](https://www.dropbox.com/): Easy to use, reliable, private, and secure. It’s no wonder Dropbox is the choice for storing and sharing your most important files.
 - [Google Drive](https://www.google.com/drive/): Store, share, and collaborate on files and folders from your mobile device, tablet, or computer.
 - [Obsidian](https://obsidian.md/): Obsidian is a powerful knowledge base on top of a local folder of plain text Markdown files.
+- [Zotero](https://www.zotero.org/): Your personal research assistant. Easy-to-use tool to help you collect, organize, annotate, cite, and share research.
+  * [zotfile](https://github.com/jlegewie/zotfile): Advanced PDF management for Zotero.
+  * [Mdnotes](https://github.com/argenos/zotero-mdnotes): A Zotero plugin to export item metadata and notes as markdown files.
+  * [Better BibTeX for Zotero](https://github.com/retorquere/zotero-better-bibtex): Make Zotero effective for us LaTeX holdouts.
 - [MarginNote](https://www.marginnote.com/): A brand new e-reader to better study and digest your books.
 - [Mindnode](https://www.mindnode.com/): Mind Mapping & Outlining.
 - [PDF Expert](https://pdfexpert.com/): The go-to PDF editor for iPhone, iPad and Mac We make it easy to edit, annotate, sign and organize PDFs.
@@ -120,12 +127,17 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 - [Affinity Photo](https://apps.apple.com/us/app/affinity-photo/id824183456): Professional photo editing.
 - [Yoink](https://apps.apple.com/us/app/yoink-improved-drag-and-drop/id457622435): Your Files and Snippet Shelf.
 - [Unsplash](https://apps.apple.com/us/app/unsplash-wallpapers/id1284863847): A breathtaking photo for your desktop wallpaper, every day.
+- [HandBrake](https://github.com/HandBrake/HandBrake): A tool for converting video from nearly any format to a selection of modern, widely supported codecs.
+- [Upscayl](https://github.com/upscayl/upscayl): Free and Open Source AI Image Upscaler.
+- [Buzz](https://github.com/chidiwilliams/buzz): Buzz transcribes and translates audio offline on your personal computer. Powered by OpenAI's Whisper.
+- [LocalSend](https://github.com/localsend/localsend): LocalSend is a free, open-source app that allows you to securely share files and messages with nearby devices over your local network, without needing an internet connection.
 
 ---
 
 **References:**
 
 - [dotfiles](https://dotfiles.github.io/)
+- [Takuya's dotfiles](https://github.com/craftzdog/dotfiles-public)
 - [My Setup](https://mysetup.co/)
 - [My 2021 New Mac Setup](https://www.swyx.io/new-mac-setup-2021)
 - [Mac Setup for Web Development [2022]](https://www.robinwieruch.de/mac-setup-web-development/)
