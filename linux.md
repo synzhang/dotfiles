@@ -1,11 +1,41 @@
 # Linux
 
+## Initialization
+
+```sh
+# Switch to root
+su
+
+# Add user account to sudo group
+/sbin/addgroup my_username sudo
+```
+
+Then logout and re-login.
+
+## Drivers
+
+- [Linux for T2](https://t2linux.org): Patches to Linux and associated distros for Apple T2-based devices.
+
+
+## Package Manager
+
+### Flatpak
+
+```sh
+sudo apt install flatpak
+
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+```
+
 ## Apps
+
+Then restart system.
 
 - [Rime](https://rime.im/): A chinese input method.
   - [ibus-rime](https://github.com/rime/ibus-rime/): Rime Input Method Engine for Linux/IBus.
 - [Chrome](https://www.google.com/chrome/): Google web browser.
 - [Bitwarden](https://bitwarden.com/): Move fast and securely with the password manager trusted by millions.
+- [yadm](https://github.com/TheLocehiliosan/yadm): Yet Another Dotfiles Manager.
 - [ufw](https://code.launchpad.net/ufw): A frontend for iptables, designed to be easy to use.
 - [Ulauncher](https://github.com/Ulauncher/Ulauncher/): Application launcher for Linux.
 - [Visual Studio Code](https://code.visualstudio.com/): Code editing. Redefined. Free. Built on open source. Runs everywhere.
@@ -23,8 +53,13 @@
 - [Buzz](https://github.com/chidiwilliams/buzz): Buzz transcribes and translates audio offline on your personal computer. Powered by OpenAI's Whisper.
 - [LocalSend](https://github.com/localsend/localsend): LocalSend is a free, open-source app that allows you to securely share files and messages with nearby devices over your local network, without needing an internet connection.
 - [Timeshift](https://github.com/linuxmint/timeshift): System restore tool for Linux.
+- [fzy](https://github.com/jhawthorn/fzy): A fast, simple fuzzy text selector for the terminal with an advanced scoring algorithm.
+- [fzf](https://github.com/junegunn/fzf): A general-purpose command-line fuzzy finder.
+- [wget](https://www.gnu.org/software/wget): A free software package for retrieving files using HTTP, HTTPS, FTP and FTPS, the most widely used Internet protocols. 
+- [p7zip](https://p7zip.sourceforge.net/): A command line port of 7-Zip for POSIX systems.
+  - p7zip-full: provides utilities to pack and unpack 7z archives within a shell or using a GUI.
 
-## Configuration
+## Configurations
 
 ### System Proxy
 
@@ -60,7 +95,7 @@ sudo apt install font-manager
 - [Source Han Sans | 思源黑体](https://github.com/adobe-fonts/source-han-sans)
 - [Source Han Serif | 思源宋体](https://github.com/adobe-fonts/source-han-serif)
 
-```shell
+```sh
 sudo mv windows_fonts/ /usr/share/fonts/windows_font/
 sudo fc-cache -fv
 ```
