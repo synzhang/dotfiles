@@ -6,13 +6,19 @@
 
 ### Shell
 
+- [dotbot](https://github.com/anishathalye/dotbot): A tool that bootstraps your dotfiles.
 - [Zsh](https://www.zsh.org/): Zsh is a shell designed for interactive use.
   - [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh): Oh My Zsh is an open source, community-driven framework for managing your zsh configuration.
   - [Powerlevel10k](https://github.com/romkatv/powerlevel10k): Powerlevel10k is a theme for Zsh. It emphasizes speed, flexibility and out-of-the-box experience.
   - [zsh-z](https://github.com/agkozak/zsh-z): Jump quickly to directories that you have visited "frecently." A native Zsh port of z.sh with added features.
+  - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting): Fish shell like syntax highlighting for Zsh.
+- [zellij](https://github.com/zellij-org/zellij): A terminal workspace with batteries included.
+- [yadm](https://github.com/TheLocehiliosan/yadm): Yet Another Dotfiles Manager.
+- [asdf](https://github.com/asdf-vm/asdf): Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more.
 - [Pandoc](https://github.com/jgm/pandoc): A universal document converter.
 - [ImageMagick](https://github.com/imagemagick/imagemagick): Used to create, edit, compose, or convert bitmap images, and supports a wide range of file formats.
 - [FFmpeg](https://github.com/FFmpeg/FFmpeg): A collection of libraries and tools to process multimedia content such as audio, video, subtitles and related metadata.
+- [fig](https://github.com/withfig/autocomplete): IDE-style autocomplete for your existing terminal & shell.
 - [exa](https://the.exa.website/): A modern replacement for ls.
 - [bat](https://github.com/sharkdp/bat): A cat(1) clone with wings.
 - [tree](https://formulae.brew.sh/formula/tree): Display directories as trees.
@@ -75,8 +81,10 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
   $ git config --global core.editor vim
   $ git config --global pull.rebase true
   ```
+  - [Lazygit](https://github.com/jesseduffield/lazygit): simple terminal UI for git commands.
   - [Tig](http://jonas.github.io/tig/): Text-mode interface for Git.
   - [GitUI](https://github.com/extrawurst/gitui): Blazing fast terminal-ui for git written in Rust.
+  - [git-delta](https://github.com/dandavison/delta): A syntax-highlighting pager for git, diff, grep, and blame output.
 - [Node.js](https://nodejs.org/en/): Node.js is an open-source, cross-platform JavaScript runtime environment.
   - [n](https://github.com/tj/n): Node version management
   - [npm-check](https://github.com/dylang/npm-check): Check for outdated, incorrect, and unused dependencies.
@@ -105,11 +113,14 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 - [Figma](https://www.figma.com/): Build better products as a team. Design, prototype, and gather feedback all in one place with Figma.
 - [Keka](https://www.keka.io/): The macOS file archiver Store more, share with privacy.
 - [Calibre](https://calibre-ebook.com/): E-book management.
+  * [NLCISBNPlugin](https://github.com/DoiiarX/NLCISBNPlugin): Retieved metadata from opac.nlc.cn.
+  * [Ebook Translator](https://github.com/bookfere/Ebook-Translator-Calibre-Plugin): Translate ebook into a specified language.
 - [Sigil](https://sigil-ebook.com/): Sigil was designed to make it easy to create great ebooks using the EPUB format.
 - [Telegram](https://telegram.org/): Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.
 - [WeChat](https://apps.apple.com/us/app/wechat/id414478124): A messaging and social media app made by Tencent.
 - [iStat Menus](https://bjango.com/mac/istatmenus/): An advanced Mac system monitor for your menu bar.
 - [CleanMyMac X](https://cleanmymac.com/): The most user-friendly problem fixer for Mac. Delete system junk, unwanted apps and malware, and tune your Mac for maximum speed. For a slow computer, use immediately.
+- [Cryptomator](https://github.com/cryptomator/cryptomator): Cryptomator for Windows, macOS, and Linux: Secure client-side encryption for your cloud storage, ensuring privacy and control over your data.
 - [Keyboard Maestro](https://www.keyboardmaestro.com/main/): The Premier Mac Automation Software.
 - [Actions](https://apps.apple.com/us/app/actions/id1586435171): Useful actions for Shortcuts.
 - [Microsoft Remote Desktop](https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466): Use Microsoft Remote Desktop for Mac to connect to Azure Virtual Desktop, Windows 365, admin-provided virtual apps and desktops, or remote PCs.
@@ -131,11 +142,15 @@ ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 - [Upscayl](https://github.com/upscayl/upscayl): Free and Open Source AI Image Upscaler.
 - [Buzz](https://github.com/chidiwilliams/buzz): Buzz transcribes and translates audio offline on your personal computer. Powered by OpenAI's Whisper.
 - [LocalSend](https://github.com/localsend/localsend): LocalSend is a free, open-source app that allows you to securely share files and messages with nearby devices over your local network, without needing an internet connection.
+- [Transnomino](https://www.transnomino.com/): A batch rename utility for the Mac.
+- [bandwhich](https://github.com/imsnif/bandwhich): Terminal bandwidth utilization tool.
+- [MochiDiffusion](https://github.com/MochiDiffusion/MochiDiffusion): Run Stable Diffusion on Mac natively.
 
 ---
 
 **References:**
 
+- [Effective Neovim setup for web development towards 2024](https://www.devas.life/effective-neovim-setup-for-web-development-towards-2024/)
 - [dotfiles](https://dotfiles.github.io/)
 - [Takuya's dotfiles](https://github.com/craftzdog/dotfiles-public)
 - [My Setup](https://mysetup.co/)
